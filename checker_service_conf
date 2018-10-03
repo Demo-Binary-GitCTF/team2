@@ -1,0 +1,11 @@
+service checker_service_conf
+{
+    flags = REUSE
+    socket_type = stream
+    wait = no
+    user = checker
+    server = /service/checker
+    server_args = 
+    disable = no
+    port = 2000
+}
